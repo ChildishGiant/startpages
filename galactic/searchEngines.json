@@ -1,0 +1,11 @@
+{
+  "default":{
+    "name":"Google",
+    "searchString":"https://www.google.co.uk/search?q=%s"
+  },
+  "r":{
+    "color":"#ff4500",
+    "name":"Reddit",
+    "searchString":"https://www.reddit.com/r/%s"
+  }
+}

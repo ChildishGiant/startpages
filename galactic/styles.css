@@ -1,0 +1,107 @@
+@font-face {
+	font-family: sparkler;
+	src: url('sparkler/Sparkler-demo.ttf');
+}
+
+html{
+  font-family: 'Ubuntu', sans-serif;
+	background: #F37037;
+}
+
+body{
+	margin:0;
+}
+
+span#percent{
+  font-family: sparkler, 'Ubuntu', sans-serif ;
+  color: #F37037;
+}
+
+div#bar{
+	font-size: 2em;
+
+	position: absolute;
+  background: #fff;
+	width: 100%;
+  padding: 0.2em;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	text-align: center;
+
+	/*Stops 100% overflow*/
+	-webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+input#search{
+	font-size: 4em;
+	font-family: 'Ubuntu', sans-serif;
+	max-width: 90%;
+	text-align: center;
+	background: transparent;
+
+	border: 5px solid #304352;
+	border-radius: 5vh;
+	outline: none;
+
+	transition: all .25s;
+
+	color: #3999e6;
+
+	background-color: rgba(255,255,255,0.25);
+	padding: 0.1em;
+}
+
+/*If the box is about to or is actively being used*/
+input#search:hover, input#search:focus, input#search:valid {
+	-moz-transform: translate(0px, -3px);
+	-webkit-transform: translate(0px, -3px);
+	-o-transform: translate(0px, -3px);
+	-ms-transform: translate(0px, -3px);
+	transform: translate(0px, -3px);
+
+
+	border-color: #2f6c9d; /*Change border color to a more saturated and lighter color*/
+	box-shadow: 0 10px 10px rgba(0,0,0,0.22); /*Appear raised*/
+}
+
+div#centered{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+
+	/*Centering*/
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#wallInfo{
+	font-size: 1.3em;
+	top: 80%;
+	padding: 0.5em;
+	padding-right: 2em;
+	background: rgba(255, 255, 255, 0.75);
+	position: fixed;
+
+	-webkit-clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+	clip-path: polygon(0 0, 100% 0, 87% 100%, 0% 100%);
+
+	max-width: 500px;
+}
+
+
+
+#wallDescription p{
+	font-size: 0.75em;
+	-webkit-margin-before: 0px;
+	-webkit-margin-after: 0px;
+}
+
+#wallDescription{
+	max-width: 94%;
+}
+
+a{
+	color: #000;
+}
